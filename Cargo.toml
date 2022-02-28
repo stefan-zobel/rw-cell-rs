@@ -1,0 +1,9 @@
+[package]
+name = "rw_cell"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+
+rwlock_rs = { git = "https://github.com/stefan-zobel/rwlock-rs" }
