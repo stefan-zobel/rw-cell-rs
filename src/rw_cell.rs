@@ -10,7 +10,6 @@ pub struct RwCell<T: ?Sized> {
 }
 
 unsafe impl<T: ?Sized + Send> Send for RwCell<T> {}
-//unsafe impl<T: ?Sized + Send> Sync for RwCell<T> {} ?
 unsafe impl<T: ?Sized + Send + Sync> Sync for RwCell<T> {}
 
 impl<T> RwCell<T> {
